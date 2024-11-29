@@ -1,0 +1,27 @@
+/* Normal state with shadow for elevation */
+.button {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Elevation effect */
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevation effect on hover */
+  }
+  
+  /* Active state when button is pressed */
+  .button:active {
+    transform: translateY(4px); /* Move the button down */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce the shadow for pressed effect */
+  }
+  
